@@ -78,11 +78,9 @@ def main():
     airlight_estimator.eval()
     beta_range = (args.beta_min, args.beta_max)
     beta_steps = args.beta_steps
-    for reference_images, source_images, depths, data_masks, KRKi, Kt, _A, _beta, feature_points, _, _, _, idx in test_loader:
+    for reference_images, source_images, KRKi, Kt, feature_points, idx in test_loader:
         reference_images = reference_images.transpose(1,2).transpose(1,3).to('cuda')  # samples x 3 x heigh x width
         source_images = source_images.transpose(1,2).transpose(1,3).to('cuda')  # samples x 3 x heigh x width
-        depths = depths.unsqueeze(-1).transpose(1,2).transpose(1,3).to('cuda')  # samples x 1 x heigh x width
-        data_masks = data_masks.unsqueeze(-1).transpose(1,2).transpose(1,3).to('cuda')
         KRKi = KRKi.to('cuda') # samples x 3 x 3
         Kt = Kt.to('cuda') # samples x 3 
         feature_points = feature_points.transpose(1,2).transpose(1,3).to('cuda')  # samples x 4 x heigh x width
@@ -120,7 +118,7 @@ def main():
                                                                                          beta_range2, beta_steps2,
                                                                                          feature_depth, masks)
         print("A = ", A)
-        print("beta2 =", beta2)
+        print("beta =", beta2)
         
     # visualize result
     r_img = reference_images.transpose(1,2).transpose(2,3).to('cpu').detach().numpy()
@@ -169,6 +167,8 @@ def main():
     plt.tick_params(bottom=False, left=False, right=False, top=False)
     
     plt.savefig("result.png")
+    
+    print("save => result.png")
 
 
 if __name__ == "__main__":
