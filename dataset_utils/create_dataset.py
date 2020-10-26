@@ -12,7 +12,7 @@ import statistics
 #   hazy_s: source image
 #   Ks_Rrs_Kri: 3 x 3 array
 #   Ks_trs: 3d array
-#   sparse_points: w x h x 3 array. Each pixel srores a 3D point obtained by SfM. 
+#   sparse_points: h x w x 3 array. Each pixel srores a 3D point obtained by SfM. 
 
 # exmaple:
 # python create_dataset.py -i colmap/shirouma2/images -c shirouma2_sparse/ -o test_data -f 37
@@ -46,12 +46,10 @@ def resize_sparse_points(sparse_points, out_size):
     
     
 
-def create_dataset(image_path, colmap_output_path, output_path, image_size, frame=0, th=0.1, interval=1, scale=0.3):
+def create_dataset(image_path, colmap_output_path, output_path, image_size, frame=0, interval=5, scale=1.0):
     
     i_sample = 0
     
-    #if os.path.exists(output_path):
-    #    shutil.rmtree(output_path)
     if not os.path.exists(output_path):
         os.mkdir(output_path)
     

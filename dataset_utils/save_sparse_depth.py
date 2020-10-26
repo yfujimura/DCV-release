@@ -105,9 +105,6 @@ def main():
     out_root_path = args.out_path
     colmap_project_path = args.colmap_project_path
     
-    #if os.path.exists(out_root_path):
-    #    shutil.rmtree(out_root_path)
-    #os.mkdir(out_root_path)
     if not os.path.exists(out_root_path):
         os.mkdir(out_root_path)
     
