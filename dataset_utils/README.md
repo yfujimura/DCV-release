@@ -1,5 +1,5 @@
 ## Download video captured in foggy scene
-We provided a video captured in actual foggy scenes. A sparse 3D point cloud and camera parameters of each frame were estimated by [COLMAP](https://colmap.github.io/){:target="_blank"} with sequential matching and default hyperparameters. At ```colmap```, please run:
+We provided a video captured in actual foggy scenes. A sparse 3D point cloud and camera parameters of each frame were estimated by [COLMAP](https://colmap.github.io/){:target=``_blank``} with sequential matching and default hyperparameters. At ```colmap```, please run:
 
 ```$ bash download_shirouma2.sh```
 
