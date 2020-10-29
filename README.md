@@ -21,7 +21,7 @@ If you use this code, please cite:
 ## Download trained models
 Our trained models can be downloaded as follows:
 
-```bash download.sh ```
+```bash download_model.sh ```
 
 ## Sample code
 You can get a sample result by
