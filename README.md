@@ -24,7 +24,7 @@ Our trained models can be downloaded as follows:
 ```bash download.sh ```
 
 ## Sample code
-You can get sample result by
+You can get a sample result by
 
 ```python test.py --dcv_mvsnet_checkpoint model/dehazing_mvs_net.pth --airlight_checkpoint model/airlight_estimator.pth```
 
