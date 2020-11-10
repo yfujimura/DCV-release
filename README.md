@@ -1,5 +1,5 @@
 # Dehazing Cost Volume for Deep Multi-view Stereo in Scattering Media
-This is the code of the extended version of our ACCV2020 paper "Dehazing Cost Volume for Deep Multi-view Stereo in Scattering Media".
+This is the code of the extended version of our ACCV2020 paper "Dehazing Cost Volume for Deep Multi-view Stereo in Scattering Media."
 If you use this code, please cite:
 
 ```
@@ -12,7 +12,7 @@ If you use this code, please cite:
 
 @article{fujimura20b,
 	author = {Y. Fujimura and M. Sonogashira and M. Iiyama},
-	title = {Dehazing Cost Volume for Deep Multi-view Stereo in Scattering Media with Scattering Parameters Estimation},
+	title = {Dehazing Cost Volume for Deep Multi-view Stereo in Scattering Media with Airlight and Scattering Coefficient Estimation},
 	journal = {TBA},
 	year = 2020
 }
