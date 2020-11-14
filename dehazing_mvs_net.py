@@ -144,7 +144,7 @@ class MVSNet(nn.Module):
         warped_uv = (warped_uv - normalize_base) / normalize_base
         warped_uv = warped_uv.view(batch_n, 2, width, height)
         warped_uv = warped_uv.transpose(1,3)
-        warped = F.grid_sample(source_images, warped_uv)
+        warped = F.grid_sample(source_images, warped_uv, align_corners=True)
         
         
         return warped
@@ -326,7 +326,7 @@ class DehazingMVSNet(nn.Module):
         warped_uv = (warped_uv - normalize_base) / normalize_base
         warped_uv = warped_uv.view(batch_n, 2, width, height)
         warped_uv = warped_uv.transpose(1,3)
-        warped = F.grid_sample(source_images, warped_uv)
+        warped = F.grid_sample(source_images, warped_uv, align_corners=True)
         
         
         return warped
@@ -346,11 +346,11 @@ class DehazingMVSNet(nn.Module):
         warped_uv = (warped_uv - normalize_base) / normalize_base
         warped_uv = warped_uv.view(batch_n, 2, width, height)
         warped_uv = warped_uv.transpose(1,3)
-        warped_img = F.grid_sample(source_images, warped_uv)
+        warped_img = F.grid_sample(source_images, warped_uv, align_corners=True)
         
         depth_from_reference = demon.view(batch_n, 1, width, height)
         depth_from_reference = depth_from_reference.transpose(2, 3)
-        warped_depth = F.grid_sample(depth_from_reference, warped_uv)
+        warped_depth = F.grid_sample(depth_from_reference, warped_uv, align_corners=True)
         depth_from_reference[warped_depth == 0] = 0
         
         return warped_img, depth_from_reference
