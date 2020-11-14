@@ -39,7 +39,7 @@ class MVSDataset(Dataset):
         return len(self.data_list)
     
     def __getitem__(self, idx):
-        data = np.load(os.path.join(self.root_dir, "{:06}.npy".format(idx)))
+        data = np.load(os.path.join(self.root_dir, "{:06}.npy".format(idx)), allow_pickle=True)
         output = [data[i] for i in range(data.shape[0])]
         output.append(idx)
         
