@@ -13,10 +13,12 @@ If you use this code, please cite:
 @article{fujimura20b,
 	author = {Y. Fujimura and M. Sonogashira and M. Iiyama},
 	title = {Dehazing Cost Volume for Deep Multi-view Stereo in Scattering Media with Airlight and Scattering Coefficient Estimation},
-	journal = {TBA},
+	journal = {arXiv preprint arXiv:2011.09114},
 	year = 2020
 }
 ```
+
+[The paper on arXiv](https://arxiv.org/abs/2011.09114)
 
 ## Download trained models
 Our trained models can be downloaded as follows:
