@@ -3,14 +3,14 @@ This is the code of the extended version of our ACCV2020 paper "Dehazing Cost Vo
 If you use this code, please cite:
 
 ```
-@article{fujimura20a,
+@article{fujimura20,
 	author = {Y. Fujimura and M. Sonogashira and M. Iiyama},
 	title = {Dehazing Cost Volume for Deep Multi-view Stereo in Scattering Media},
 	journal = {Asian Conference on Computer Vision (ACCV)},
 	year = 2020
 }
 
-@article{fujimura20b,
+@article{fujimura21,
 	author = {Y. Fujimura and M. Sonogashira and M. Iiyama},
 	title = {Dehazing Cost Volume for Deep Multi-view Stereo in Scattering Media with Airlight and Scattering Coefficient Estimation},
 	journal = {Computer Vision and Image Understanding},
