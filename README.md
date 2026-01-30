@@ -20,7 +20,7 @@ If you use this code, please cite:
 
 [The paper on arXiv](https://arxiv.org/abs/2011.09114)
 
-## (2026/01/30) Download ptetrained models and data
+## (2026/01/30) Download pretrained models and data
 The URLs in the download scripts in the following sections are currently unavailable. Please download the pretrained models and data directly from [here](https://drive.google.com/drive/folders/1p8pJyoEQQwOZJc9W90GwlZOBDVxO9_sr?usp=drive_link).
 
 ## Download trained models
