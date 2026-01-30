@@ -20,10 +20,13 @@ If you use this code, please cite:
 
 [The paper on arXiv](https://arxiv.org/abs/2011.09114)
 
-## Download trained models
-Our trained models can be downloaded as follows:
+## (2026/01/30) Download ptetrained models and data
+The URLs in the download scripts in the following sections are currently unavailable. Please download the pretrained models and data directly from [here](https://drive.google.com/drive/folders/1p8pJyoEQQwOZJc9W90GwlZOBDVxO9_sr?usp=drive_link).
 
-```bash download_model.sh ```
+## Download trained models
+~~Our trained models can be downloaded as follows:~~
+
+~~```bash download_model.sh ```~~
 
 ## Sample code
 You can get a sample result by
@@ -34,9 +37,9 @@ You can get a sample result by
 ![result](result.png)
 
 ## Download video captured in foggy scene
-We provided a video captured in actual foggy scenes. A sparse 3D point cloud and camera parameters of each frame were estimated by [COLMAP](https://colmap.github.io/) with sequential matching and default hyperparameters. At ```dataset_utils/colmap```, please run:
+We provided a video captured in actual foggy scenes. A sparse 3D point cloud and camera parameters of each frame were estimated by [COLMAP](https://colmap.github.io/) with sequential matching and default hyperparameters. ~~At ```dataset_utils/colmap```, please run:~~
 
-```bash download_shirouma2.sh```
+~~```bash download_shirouma2.sh```~~
 
 We also provided a useful script that extracts camera parameters and sparse depth maps from COLMAP output.
 
